@@ -54,6 +54,7 @@ def delete(request, pk):
 
 
 def items(request):
+    # import ipdb; ipdb.set_trace()
     query = request.GET.get("query")
     category_id = request.GET.get("category_id")
     categories = item_models.Category.objects.all()
